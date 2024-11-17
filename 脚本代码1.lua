@@ -1,3 +1,4 @@
+--这个脚本源码我是公开的，没加密，但可能以后会加密
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -1214,11 +1215,5 @@ end)
 about:Button("复制卡密",function()
 setclipboard("BestTheStrongest5412Roblox")
   end)
-
-local UITab9 = win:Tab("最强战场",'7734068321')
-local about = UITab9:section("脚本",true)
-about:Button("搬运",function()
-loadstring(game:HttpGet("https://github.com/djdu894/-1/blob/main/%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%811.lua"))()
-end)
   
  local UITab9 = win:Tab("怕点不到才加的",'7734068321')
