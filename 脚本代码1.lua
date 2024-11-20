@@ -1,4 +1,4 @@
---这个脚本源码我是公开的，没加密，但可能以后会加密
+--缝合脚本只有公开源码才能走的远
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -39,13 +39,11 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "搬运脚本"; Text ="由于我不会作UI，所有借用了禁漫中心的"; Duration = 2; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "作者：我搬运工"; Text ="UI作者：丁丁"; Duration = 2; })
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "如果没有功能就再启动一下"; Text ="如果没有功能就再启动一下"; Duration = 2; })
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/hun/main/jmlibrary1.lua"))();
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();  
 local win = ui:new("搬运脚本中心")
 
-local UITab1 = win:Tab("『信息』",'7734068321')
+local UITab1 = win:Tab("『信息』",'4483345998')
 
 local about = UITab1:section("查看作者信息",true)
 
@@ -82,7 +80,7 @@ about:Label("你的用户ID:"..game.Players.LocalPlayer.UserId)
 about:Label("获取客户端ID:"..game:GetService("RbxAnalyticsService"):GetClientId())
 
 
-local UITab2 = win:Tab("『公告』",'7734068321')
+local UITab2 = win:Tab("『公告』",'4483345998')
 
 local about = UITab2:section("『公告』",true)
 
@@ -91,7 +89,7 @@ about:Label("UI是我借别人的，重要的事说三遍")
 about:Label("UI是我借别人的，重要的事说三遍")
 about:Label("UI是我借别人的，重要的事说三遍")     
 
-local UITab1 = win:Tab("通用",'7734068321')
+local UITab1 = win:Tab("通用",'4483345998')
 
 local about = UITab1:section("『通用』",true)
 about:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
@@ -639,7 +637,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScri
 end)
 about:Button("穿防止点不到",function()
 end)
-local UITab3 = win:Tab("音乐",'7734068321')
+local UITab3 = win:Tab("音乐",'4483345998')
 local about = UITab3:section("每个中囯人必须听过的音乐音乐",true)
 about:Button("义勇军进行曲",function()
    local sound = Instance.new("Sound")
@@ -654,7 +652,7 @@ about:Button("防空警报",function()
     sound:Play()
     end)
     
-    local UITab1 = win:Tab("传送玩家",'7734068321')
+    local UITab1 = win:Tab("传送玩家",'4483345998')
 
 local about = UITab1:section("传送玩家",true)
 about:Dropdown("选择玩家到传送", "Player Name", AllPlayers, function(Value)
@@ -673,9 +671,9 @@ about:Button("刷新列表", function()
     teleports:SetOptions(AllPlayers)
 end)
 
-local UITab1 = win:Tab("力量传奇",'7734068321')
+local UITab1 = win:Tab("力量传奇",'4483345998')
 
-local about = UITab1:section("『力量传奇』",true)
+local about = UITab1:section("自动锻炼",true)
 
 about:Toggle("自动比赛开关", "AR", false, function(AR)
   while AR do wait() wait(2) game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl") end
@@ -702,7 +700,7 @@ end)
 about:Button("收集宝石", function()
   jk = {} for _, v in pairs(game:GetService("ReplicatedStorage").chestRewards:GetDescendants()) do if v.Name ~= "Light Karma Chest" or v.Name ~= "Evil Karma Chest" then table.insert(jk, v.Name) end end for i = 1, #jk do wait(2) game:GetService("ReplicatedStorage").rEvents.checkChestRemote:InvokeServer(jk[i]) end
 end)
-
+local about = UITab1:section("自动跑步机",true)
 about:Toggle("沙滩跑步机10", "PPJ10", false, function(PPJ10)
     getgenv().PPJ10 = PPJ10 while getgenv().PPJ10 do wait() game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 10 game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(238.671112, 5.40315914, 387.713165, -0.0160072874, -2.90710176e-08, -0.99987185, -3.3434191e-09, 1, -2.90212157e-08, 0.99987185, 2.87843993e-09, -0.0160072874) local oldpos = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame local RunService = game:GetService("RunService") local Players = game:GetService("Players") local localPlayer = Players.LocalPlayer RunService:BindToRenderStep("move", Enum.RenderPriority.Character.Value + 1, function() if localPlayer.Character then local humanoid = localPlayer.Character:WaitForChild("Humanoid") if humanoid then humanoid:Move(Vector3.new(10000, 0, -1), true) end end end) end if not getgenv().PPJ10 then local RunService = game:GetService("RunService") local Players = game:GetService("Players") local localPlayer = Players.LocalPlayer RunService:UnbindFromRenderStep("move", Enum.RenderPriority.Character.Value + 1, function() if localPlayer.Character then local humanoid = localPlayer.Character:FindFirstChild("Humanoid") if humanoid then humanoid:Move(Vector3.new(10000, 0, -1), true) end end end) end
 end)
@@ -718,7 +716,7 @@ end)
 about:Toggle("传奇健身房跑步机3000", "CQPPJ3000", false, function(CQPPJ3000)
     if game.Players.LocalPlayer.Agility.Value >= 3000 then getgenv().CQPPJ3000 = CQPPJ3000 while getgenv().CQPPJ3000 do wait() game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 10 game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(4370.82812, 999.358704, -3621.42773, -0.960604727, -8.41949266e-09, -0.27791819, -6.12478646e-09, 1, -9.12496567e-09, 0.27791819, -7.06329528e-09, -0.960604727) local oldpos = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame local RunService = game:GetService("RunService") local Players = game:GetService("Players") local localPlayer = Players.LocalPlayer RunService:BindToRenderStep("move", Enum.RenderPriority.Character.Value + 1, function() if localPlayer.Character then local humanoid = localPlayer.Character:WaitForChild("Humanoid") if humanoid then humanoid:Move(Vector3.new(10000, 0, -1), true) end end end) end end if not getgenv().CQPPJ3000 then local RunService = game:GetService("RunService") local Players = game:GetService("Players") local localPlayer = Players.LocalPlayer RunService:UnbindFromRenderStep("move", Enum.RenderPriority.Character.Value + 1, function() if localPlayer.Character then local humanoid = localPlayer.Character:FindFirstChild("Humanoid") if humanoid then humanoid:Move(Vector3.new(10000, 0, -1), true) end end end) end
 end)
-
+local about = UITab1:section("自动打石头",true)
 about:Toggle("石头0", "RK0", false, function(RK0)
     getgenv().RK0 = RK0 while getgenv().RK0 do wait() for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v:IsA("Tool") and v.Name == "Punch" then game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(v) end end for i,h in pairs(game.Players.LocalPlayer.Character:GetChildren()) do if h:IsA("Tool") and h.Name == "Punch" then h:Activate() end end game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(7.60643005, 4.02632904, 2104.54004, -0.23040159, -8.53662385e-08, -0.973095655, -4.68743764e-08, 1, -7.66279342e-08, 0.973095655, 2.79580536e-08, -0.23040159) end if not getgenv().RK0 then game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):UnequipTools() end
 end)
@@ -754,6 +752,357 @@ about:Toggle("挥拳无间隔", "RK5M", false, function(RK5M)
 			game:GetService("Players").LocalPlayer.Backpack.Punch:FindFirstChildOfClass("NumberValue").Value = punchCooldown
 		end
 		end)
+local about = UITab1:section("深蹲架",true)
+about:Toggle("蹲式沙滩", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 1000 then
+getgenv().spam = rack
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(232.627625, 3.67689133, 96.3039856, -0.963445187, -7.78685845e-08, -0.267905563, -7.92865222e-08, 1, -5.52570167e-09, 0.267905563, 1.5917589e-08, -0.963445187)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Squat Rack"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+
+about:Toggle("深蹲架霜冻健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 4000 then
+getgenv().spam = rack
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-2629.13818, 3.36860609, -609.827454, -0.995664716, -2.67296816e-08, -0.0930150598, -1.90042453e-08, 1, -8.39415222e-08, 0.0930150598, -8.18099295e-08, -0.995664716)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Squat Rack"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+
+about:Toggle("深蹲架传奇健身房", "text",false,function(rack)
+    getgenv().spam = rack
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(4443.04443, 987.521484, -4061.12988, 0.83309716, 3.33018835e-09, 0.553126693, -2.87759438e-09, 1, -1.68654424e-09, -0.553126693, -1.86619012e-10, 0.83309716)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Squat Rack"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+
+about:Toggle("深蹲架肌肉健身房", "text",false,function(rack)
+    getgenv().spam = rack
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-8757.37012, 13.2186356, -6051.24365, -0.902269304, 1.63610299e-08, -0.431172907, 1.71076486e-08, 1, 2.14606288e-09, 0.431172907, -5.44002754e-09, -0.902269304)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Squat Rack"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+local about = UITab1:section("引体向上",true)
+about:Toggle("引体向上沙滩", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 1000 then
+getgenv().spam = pull
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-185.157745, 5.81071186, 104.747154, 0.227061391, -8.2363325e-09, 0.97388047, 5.58502826e-08, 1, -4.56432803e-09, -0.97388047, 5.54278827e-08, 0.227061391)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Legends Pullup"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("引体向上神话健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 4000 then
+getgenv().spam = pull
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(2315.82104, 5.81071281, 847.153076, 0.993555248, 6.99809632e-08, 0.113349125, -7.05298859e-08, 1, 8.32554692e-10, -0.113349125, -8.82168916e-09, 0.993555248)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Legends Pullup"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("引体向上传奇健身房", "text",false,function(rack)
+    getgenv().spam = pull
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(4305.08203, 989.963623, -4118.44873, -0.953815758, -7.58000382e-08, -0.30039227, -8.98859724e-08, 1, 3.30721512e-08, 0.30039227, 5.85457904e-08, -0.953815758)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Legends Pullup"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+local about = UITab1:section("卧推",true)
+about:Toggle("卧推沙滩", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 150 then
+getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-241.827469, 7.91391563, 346.321808, 0.811665356, -1.43794319e-08, -0.584122717, -3.94010407e-08, 1, -7.93666999e-08, 0.584122717, 8.74342447e-08, 0.811665356)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("卧推冰霜健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 7500 then
+getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-3020.7019, 32.5691414, -194.773117, 0.924556971, 2.05821564e-08, 0.381043822, -3.5507064e-08, 1, 3.21384199e-08, -0.381043822, -4.32435456e-08, 0.924556971)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("卧推神话健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 15000 then
+getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(2363.95483, 42.2141037, 1243.50562, -0.944882751, 2.18911698e-08, 0.32740894, 4.06544087e-09, 1, -5.51292381e-08, -0.32740894, -5.07596027e-08, -0.944882751)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("卧推永恒健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 15000 then
+getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-7172.77002, 48.3923645, -1105.06018, -0.972435296, -4.87620122e-09, 0.233172983, -2.76572942e-09, 1, 9.37805122e-09, -0.233172983, 8.47465476e-09, -0.972435296)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("卧推传奇健身房", "text",false,function(rack)
+    getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(4109.81152, 1024.02734, -3800.75122, 0.446250677, -7.44993258e-08, -0.894908011, -1.94296179e-09, 1, -8.4216893e-08, 0.894908011, 3.93206179e-08, 0.446250677)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("卧推肌肉之王健身房", "text",false,function(rack)
+    getgenv().spam = bench
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-8592.99805, 49.1056519, -6042.80322, -0.975815654, -1.70261014e-08, 0.218595073, -1.06326148e-08, 1, 3.04244203e-08, -0.218595073, 2.73643881e-08, -0.975815654)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder["Bench Press"].interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+local about = UITab1:section("丢石头",true)
+about:Toggle("丢石头沙滩", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 3000 then
+getgenv().spam = lift
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(-91.6730804, 3.67689133, -292.42868, -0.221022144, -2.21041621e-08, -0.975268781, 1.21414407e-08, 1, -2.54162646e-08, 0.975268781, -1.7458726e-08, -0.221022144)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder.Deadlift.interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("丢石头神话健身房", "text",false,function(rack)
+    if game.Players.LocalPlayer.leaderstats.Strength.Value >= 10000 then
+getgenv().spam = lift
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(2486.01733, 3.67689276, 1237.89331, 0.883595645, -2.06135038e-08, -0.468250751, -3.3286871e-09, 1, -5.03036404e-08, 0.468250751, 4.60067362e-08, 0.883595645)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder.Deadlift.interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("丢石头传奇健身房", "text",false,function(rack)
+    getgenv().spam = lift
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(4189.96143, 987.829773, -3903.0166, 0.422592968, 0, 0.906319559, 0, 1, 0, -0.906319559, 0, 0.422592968)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder.Deadlift.interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+about:Toggle("丢石头肌肉之王健身房", "text",false,function(rack)
+    getgenv().spam = lift
+while getgenv().spam do
+wait()
+if game.Players.LocalPlayer.machineInUse.Value == nil then
+game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(8933.69434, 13.5269222, -5700.12598, -0.823058188, 6.96304259e-09, 0.567957044, -1.19721832e-08, 1, -2.96093621e-08, -0.567957044, -3.11699146e-08, -0.823058188)
+local vim = game:service("VirtualInputManager")
+           vim:SendKeyEvent(true, "E", false, game)
+else
+local A_1 = "rep"
+local A_2 = game:GetService("Workspace").machinesFolder.Deadlift.interactSeat
+local Event = game:GetService("Players").LocalPlayer.muscleEvent
+Event:FireServer(A_1, A_2)
+end
+end
+if not getgenv().spam then
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Jump = true
+end
+end)
+local about = UITab1:section("传送",true)
 about:Button("传送到出生点",function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(7, 3, 108)
 end)
@@ -791,7 +1140,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Muscl
 end)
 about:Button("穿防止点不到",function()
 end)
-local UITab2 = win:Tab("极速传奇",'7734068321')
+local UITab2 = win:Tab("极速传奇",'4483345998')
 
 local about = UITab2:section("刷数值",true)
 about:Button("卡宠",function()
@@ -813,7 +1162,7 @@ about:Button("传送到传奇公路",function()
 	   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.87109375, 216.83917236328125, 5907.6279296875)    
  end)
  
- local UITab4 = win:Tab("door",'7734068321')
+ local UITab4 = win:Tab("door",'4483345998')
 
 local about = UITab4:section("111",true)
 about:Button("搬运，肥肠的好用",function()
@@ -861,7 +1210,7 @@ end)
 about:Button("怕点不到才加的",function()
 
 end)
-local UITab5 = win:Tab("『Door2』",'7734068321')
+local UITab5 = win:Tab("『Door2』",'4483345998')
 
 local about = UITab5:section("『Door2』",true)
 
@@ -877,13 +1226,13 @@ end)
 about:Button("脚本",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III", true))()
 end)
-local UITab6 = win:Tab("木材大亨2",'7734068321')
+local UITab6 = win:Tab("木材大亨2",'4483345998')
 
 local about = UITab6:section("111",true)
 about:Button("搬运，肥肠的好用",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/djdu894/Timber-Tycoon-2/refs/heads/main/%E6%9C%A8%E6%9D%90%E5%A4%A7%E4%BA%A8.lua"))()
 end)
-local UITab7 = win:Tab("伐木大亨",'7734068321')
+local UITab7 = win:Tab("伐木大亨",'4483345998')
 local about = UITab7:section("其他脚本",true)
 about:Button("白",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Kavo-Ui/main/%E4%BC%90%E6%9C%A8%E5%A4%A7%E4%BA%A82.lua", true))()
@@ -1203,7 +1552,7 @@ about:Button("画室",function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5241.55810546875, -166.00003051757812, 709.5656127929688)
 end)
 local about = UITab7:section("有怕点不到才加的",true)
-local UITab8 = win:Tab("最强战场",'7734068321')
+local UITab8 = win:Tab("最强战场",'4483345998')
 local about = UITab8:section("无卡密",true)
 about:Button("1",function()
 loadstring(game:HttpGet("https://pastefy.app/REPoaFWC/raw",true))();
@@ -1216,4 +1565,4 @@ about:Button("复制卡密",function()
 setclipboard("BestTheStrongest5412Roblox")
   end)
   
- local UITab9 = win:Tab("怕点不到才加的",'7734068321')
+ local UITab9 = win:Tab("怕点不到才加的",'4483345998')
