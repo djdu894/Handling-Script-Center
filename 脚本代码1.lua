@@ -1,5 +1,4 @@
---恭喜你获得了源码，你可以把他公开，公开以后我也就不会再更新它了
---搬运工留言
+--恭喜你，你得到了我的源码，请不要外传
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
