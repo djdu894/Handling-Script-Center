@@ -1,4 +1,3 @@
---恭喜你，你得到了我的源码，请不要外传
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
@@ -85,13 +84,6 @@ about:Toggle("脚本框架变小一点", "", false, function(state)
             game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
         end
     end)
-about:Toggle("彩虹UI", "", false, function(state)
-        if state then
-        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
-        else
-            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
-        end
-end)
     about:Button("关闭脚本",function()
         game:GetService("CoreGui")["frosty"]:Destroy()
     end)
@@ -1910,5 +1902,589 @@ about:Button(
     end
 )
   
-  local UITab12 = win:Tab("怕点不到才加的",'4483345998')
-  local about = UITab12:section("怕点不到才加的",true)
+  local UITab12 = win:Tab("旋转",'4483345998')
+  local about = UITab12:section("旋转",true)
+  
+  about:Button("旋转10",function()
+    local speed = 10
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+  about:Button("旋转30",function()
+    local speed = 30
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+end)
+  about:Button(
+    "旋转40",
+    function()
+    local speed = 40
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+  about:Button(
+    "旋转50",
+    function()
+    local speed = 50
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转60",
+    function()
+    local speed = 60
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转70",
+    function()
+    local speed = 70
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转80",
+    function()
+    local speed = 80
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转90",
+    function()
+    local speed = 90
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转100",
+    function()
+    local speed = 100
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转150",
+    function()
+    local speed = 150
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转200",
+    function()
+    local speed = 200
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转250",
+    function()
+    local speed = 250
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转300",
+    function()
+    local speed = 300
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转350",
+    function()
+    local speed = 350
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+
+about:Button(
+    "旋转400",
+    function()
+    local speed = 400
+
+local plr = game:GetService("Players").LocalPlayer
+repeat task.wait() until plr.Character
+local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
+plr.Character:WaitForChild("Humanoid").AutoRotate = false
+local velocity = Instance.new("AngularVelocity")
+velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
+velocity.MaxTorque = math.huge
+velocity.AngularVelocity = Vector3.new(0, speed, 0)
+velocity.Parent = humRoot
+velocity.Name = "Spinbot"
+    end)
+    
+    local UITab12 = win:Tab("压力",'7734068321')
+
+local about = UITab12:section("压力",true)
+
+about:Button("无敌 『有用』 ",function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Pressure-*-Mode-15992"))()
+end)
+
+about:Button("DX",function()
+loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
+end)
+
+about:Button("要卡密",function()
+loadstring(game:HttpGet(('https://pastefy.app/o6LTiEBy/raw'),true))()
+end)
+
+about:Button("超级好用  ᐅ这个是我认为最好用的ᐊ",function()
+loadstring(game:HttpGet("https://github.com/Drop56796/CreepyEyeHub/blob/main/obfuscate.lua?raw=true"))()
+end)
+
+local UITab13 = win:Tab("『其他脚本』",'7734068321')
+local about = UITab13:section("『其他脚本』",true)
+
+about:Button("山脚本",function()
+loadstring(game:HttpGet("https://h.lkmc.asia/script/ssfb.lua"))()
+end)
+
+about:Button("青脚本",function()
+    loadstring(game:HttpGet('https://rentry.co/ct293/raw'))()
+end)
+
+about:Button("陈脚本",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/QxDD9SpW"))()
+end)
+
+about:Button("杯脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/llcq"))()
+end)
+
+about:Button("北极脚本『中心』",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KwARpDxV",true))()
+end)
+
+about:Button("地岩脚本",function()
+ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\98\97\109\120\98\98\97\109\120\98\98\97\109\120\47\99\111\100\101\115\112\97\99\101\115\45\98\108\97\110\107\47\109\97\105\110\47\37\69\55\37\57\57\37\66\68\34\41\41\40\41")()
+end)
+
+about:Button("导管中心",function()
+ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\117\115\101\114\97\110\101\119\114\102\102\47\114\111\98\108\111\120\45\47\109\97\105\110\47\37\69\54\37\57\68\37\65\49\37\69\54\37\65\67\37\66\69\37\69\53\37\56\68\37\56\70\37\69\56\37\65\69\37\65\69\34\41\41\40\41\10")()
+end)
+
+about:Button("脚本中心1.5版本",function()
+ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\101\109\120\72\119\65\49"))()
+end)
+
+about:Button("玖恶脚本",function()
+    loadstring(game:HttpGet('https://ayangwp.cn/api/v3/file/get/8508/%E7%8E%96%E6%81%B6%E4%B8%AD%E5%BF%83.lua?sign=wt54yWf_f0LDB3gXXyQu0SFQ0oUDUXZBOaWQShwCFGg%3D%3A0'))()
+end)
+
+about:Button("老大脚本",function()
+    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/8401/%E8%80%81%E5%A4%A7%E8%84%9A%E6%9C%AC1.0%E7%89%88.txt?sign=XHxQ1ja8djAnEjVEG-eEZFPeZKFHJ0FHeybHpSbtBW4%3D%3A0"))()
+end)
+
+about:Button("乌云脚本",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dT4ZGge8"))()
+end)
+
+about:Button("皇脚本",function()
+    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/8577/%E7%9A%87v5.txt?sign=ToDT3Udyh4r3WwDu_yVblRL849qC2GJjjjQ7FTidF_w%3D%3A0"))()
+end)
+
+about:Button("冰红茶脚本",function()
+    loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/8582/Protected_9297682332119129.lua?sign=jP-h1AGooC90C0A0O5eDboOCoaQTZpOzLoWzg_oz1eE%3D%3A0"))()
+end)
+
+about:Button("静新脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/jxdjbx/ggff/main/%E5%B8%85%E9%94%85%E4%B8%80%E6%9E%9A%E5%B0%8F%E5%8F%AF%E7%88%B1%E5%91%80%E5%8F%91%E8%B4%A7%E5%A5%BD%E7%9A%84%E5%90%83%E4%B8%8D%E5%90%83%E8%AE%B0%E5%BE%97%E8%AE%B0%E5%BE%97%E4%BD%A0%E6%96%B9%E4%BE%BF%E6%89%93%E5%BC%80%E7%94%B5%E8%84%91%E6%96%B9%E4%B8%8D%E6%96%B9%E4%BE%BF%E8%AE%B0%E5%BE%97%E9%83%BD%E8%A7%81%E4%B8%8D%E5%88%B0%E6%96%B9%E4%BE%BF%E7%9A%84%E8%AF%9D%E6%89%8B%E6%9C%BA%E6%96%B9%E4%B8%8D%E6%96%B9%E4%BE%BF%E5%B0%B1"))()
+end)
+
+about:Button("小魔脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaomoNB666/xiaomoNB666/main/%E6%9E%81.lua"))()
+end)
+
+about:Button("鲨新ui脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fvvhhh/sturdy-octo-engine/main/Protected_1221338743706560.lua.txt"))()
+end)
+
+about:Button("雷脚本",function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/tPB47inG')))()
+end)
+
+about:Button("皮脚本",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+end)
+
+about:Button("禁漫中心",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/anlushanjinchangantangwanle/main/jmjmjmjmjmjmjmjmjmjmjmjmjmjmjmjm.lua"))()
+end)
+
+about:Button("霜脚本",function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\115\104\117\97\110\103\122\117\105\115\104\117\97\105\47\49\47\114\101\102\115\47\104\101\97\100\115\47\109\97\105\110\47\37\69\57\37\57\67\37\57\67\37\69\53\37\56\68\37\65\49\37\69\53\37\65\70\37\56\54\37\69\55\37\66\51\37\66\66\37\69\55\37\66\66\37\57\70\37\69\54\37\57\54\37\66\48\37\69\52\37\66\68\37\57\67\46\116\120\116\34\41\41\40\41\10\10")()
+end)
+
+about:Button("初脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/odhdshhe/nianchuchuchuchuchu/refs/heads/main/Protected_2427816874224132.txt"))()
+end)
+
+about:Button("鹤脚本",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qazpin66/-/refs/heads/main/%E9%B9%A41.5.lua"))()
+end)
+
+about:Button("剑客V5",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JianKeCX/JianKeV5/refs/heads/main/QQqun155160100"))()
+end)
+
+local UITab14 = win:Tab("『监狱人生』",'4483345998')
+
+local about = UITab14:section("『传送』",true)
+
+about:Button("警卫室",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(847.7261352539062, 98.95999908447266, 2267.387451171875)
+end)
+
+about:Button("监狱室内",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(919.2575073242188, 98.95999908447266, 2379.74169921875)
+end)
+
+about:Button("监狱室外",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(760.6033325195312, 96.96992492675781, 2475.405029296875)
+end)
+
+about:Button("犯罪复活点",function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-937.5891723632812, 93.09876251220703, 2063.031982421875)
+end)
+
+about:Button("传送院子", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(788.5759887695312, 97.99992370605469, 2455.056640625)
+end)
+about:Button("传送警车库", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(602.7301635742188, 98.20000457763672, 2503.56982421875)
+end)
+about:Button("传送死人下水道", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(917.4256591796875, 78.69828033447266, 2416.18359375)
+end)
+about:Button("传送食堂", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(921.0059204101562, 99.98993682861328, 2289.23095703125)
+end)
+
+local about = UITab14:section("『脚本』",true)
+
+about:Button("无敌模式", function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/LdTVujTA"))()
+end)
+about:Button("杀死所有人", function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/kXjfpFPh"))()
+end)
+
+about:Button("变钢铁侠", function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/7prijqYH"))()
+end)
+about:Button("变死神", function()
+  loadstring(game:HttpGet("https://pastebin.com/ewv9bbRp"))()
+end)
+about:Button("变车模型", function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/zLe3e4BS"))()
+end)
+
+about:Button("变成警察", function()
+    workspace.Remote.TeamEvent:FireServer("Bright blue");
+end)
+about:Button("变成囚犯", function()
+    workspace.Remote.TeamEvent:FireServer("Bright orange");
+end)
+
+about:Toggle("杀死光环", "SSGH", false, function(SSGH)
+    States.KillAura = SSGH if state then print("Kill Aura On") CreateKillPart() else print("Kill Aura Off") if Parts[1] and Parts[1].Name == "KillAura" then Parts[1]:Destroy() Parts[1] = nil end end end) function CreateKillPart() if Parts[1] then pcall(function() Parts[1]:Destroy() end) Parts[1] = nil end local Part = Instance.new("Part",plr.Character) local hilight = Instance.new("Highlight",Part) hilight.FillTransparency = 1 Part.Anchored = true Part.CanCollide = false Part.CanTouch = false Part.Material = Enum.Material.SmoothPlastic Part.Transparency = .98 Part.Material = Enum.Material.SmoothPlastic Part.BrickColor = BrickColor.White() Part.Size = Vector3.new(20,2,20) Part.Name = "KillAura" Parts[1] = Part end task.spawn(function() repeat task.wait()until plr.Character and char and char:FindFirstChildOfClass("Humanoid") if States.KillAura then CreateKillPart() end end) game:GetService("RunService").Stepped:Connect(function() if States.KillAura then for i,v in pairs(game.Players:GetPlayers()) do if v ~= game.Players.LocalPlayer then if (v.Character.HumanoidRootPart.Position - plr.Character.HumanoidRootPart.Position).magnitude <14 and v.Character.Humanoid.Health >0 then local args = {[1] = v} for i =1,2 do task.spawn(function() game:GetService("ReplicatedStorage").meleeEvent:FireServer(unpack(args)) end) end end end end end
+end)
+
+about:Button("手里剑秒杀",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PSXhuge/1/114514/jian"))()
+end)
+
+about:Button("监狱人生1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+end)
+
+about:Button("监狱人生2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+end)
+
+about:Button("监狱人生汉化",function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/fYMnAEeJ"))()
+end)
+
+local UITab15 = win:Tab("『鲨口求生』",'4483345998')
+
+local about = UITab15:section("『鲨口求生』",true)
+
+about:Dropdown("船只提取器", "FreeBoat", { "摩托艇", "摩托艇", "独角兽挺", "摩托艇", "红马林鱼", "单栀帆船", "拖船", "小船摩托艇", "摩托艇甜甜圈", "马林鱼", "管船", "渔船", "维京船", "小树林帆船", "红冠摩托艇", "双体船", "战斗船", "游船", "鸭海军陆战队", "派对船", "军事潜艇", "姜饼蒸汽船", "雪橇2022", "雪地摩托", "游轮"}, function(CS)
+  game:GetService("ReplicatedStorage").EventsFolder.BoatSelection.UpdateHostBoat:FireServer(CS)
+end)
+
+about:Button("自动杀鲨鱼", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sw1ndlerScripts/RobloxScripts/main/Misc%20Scripts/sharkbite2.lua",true))()
+end)
+
+about:Button("鲨口求生1",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+end)
+
+about:Button("鲨口求生2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
+end)
+
+about:Button("鲨口求生3",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lolboxo/SharkBiteV3/main/SharkBiteV3.1'))()
+end)
+
+about:Button("鲨口求生刷船",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ghostapustaja/legionhub/main/sharkbite2'),true))()
+end)
+
+local UITab16 = win:Tab("『超级大力士模拟器』",'4483345998')
+
+local about = UITab16:section("『超级大力士模拟器』",true)
+
+about:Button("传送到开始区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.86943817138672, 11.751949310302734, -198.07127380371094)
+    end)
+    
+about:Button("传送到健身区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(93.60747528076172, 11.751947402954102, -10.266206741333008)
+    end)
+    
+about:Button("传送到食物区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.86384582519531, 11.751947402954102, 228.9690399169922)
+    end)
+    
+about:Button("传送到街机区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.99887084960938, 11.751949310302734, 502.90997314453125)
+    end)
+    
+about:Button("传送到农场区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(85.6707763671875, 11.751947402954102, 788.5997314453125)
+    end)
+    
+about:Button("传送到城堡区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.87281036376953, 11.84177017211914, 1139.7509765625)
+    end)
+    
+about:Button("传送到蒸汽朋克区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(92.63227081298828, 11.841767311096191, 1692.7890625)
+    end)
+    
+about:Button("传送到迪斯科区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(98.69613647460938, 16.015085220336914, 2505.213134765625)
+    end)
+    
+about:Button("传送到太空区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.42948150634766, 11.841769218444824, 3425.941650390625)
+    end)
+    
+about:Button("传送到糖果区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.55805969238281, 11.841663360595703, 4340.69921875)
+    end)
+    
+about:Button("送到实验室区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(78.00920867919922, 11.841663360595703, 5226.60205078125)
+    end)
+    
+about:Button("传送到热带区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(80.26090240478516, 12.0902681350708, 6016.16552734375)
+    end)
+    
+about:Button("传送到恐龙区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(38.4753303527832, 25.801530838012695, 6937.779296875)
+    end)
+    
+about:Button("传送到复古区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(99.81867218017578, 12.89099407196045, 7901.74755859375)
+    end)
+    
+about:Button("传送到冬季区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(63.47243881225586, 11.841662406921387, 8983.810546875)
+    end)
+    
+about:Button("传送到深海区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(105.36250305175781, 26.44820213317871, 9970.0849609375)
+    end)
+    
+about:Button("传送到狂野西部区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68.69414520263672, 15.108586311340332, 10938.654296875)
+    end)
+    
+about:Button("传送到豪华公寓区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86.75145721435547, 11.313281059265137, 12130.349609375)
+    end)
+    
+about:Button("传送到宝剑战斗区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(111.25597381591797, 11.408829689025879, 12945.57421875)
+    end)
+    
+about:Button("传送到童话区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(121.14932250976562, 11.313281059265137, 14034.50390625)
+    end)
+    
+about:Button("传送到桃花区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108.2142333984375, 11.813281059265137, 15131.861328125)
+    end)
+    
+about:Button("传送到厨房区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(135.78338623046875, 21.76291847229004, 16204.9755859375)
+    end)
+    
+about:Button("传送到下水道区域", function()
+                  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(47.36086654663086, 12.25178050994873, 17656.04296875)
+    end)
+    
+about:Button("超级大力士模拟器1",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
+end)
+
+about:Button("超级大力士模拟器2",function()
+loadstring(game:HttpGet("https://pastefy.app/aO18ZEB9/raw"))()
+end)
+
+about:Button("超级大力士模拟器3",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/hngamingroblox/scripts/main/strongman%20simulator'))()
+end)
+
+about:Button("超级大力士模拟器4",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
+end)
