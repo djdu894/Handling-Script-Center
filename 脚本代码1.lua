@@ -39,7 +39,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "如果没有功能就再启动一下"; Text ="如果没有功能就再启动一下"; Duration = 2; })
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/djnd/refs/heads/main/%E5%86%B7444.txt"))();  
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/djdu894/ui/refs/heads/main/ui.lua"))();  
 local win = ui:new("搬运脚本中心")
 
 local UITab1 = win:Tab("『信息』",'4483345998')
