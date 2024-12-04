@@ -2270,6 +2270,34 @@ about:Button("剑客V5",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JianKeCX/JianKeV5/refs/heads/main/QQqun155160100"))()
 end)
 
+about:Button("安脚本（要加群组）",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/refs/heads/main/%E5%AE%89%E8%84%9A%E6%9C%AC.lua')))()
+end)
+
+about:Button("白（要白名单）",function()
+_G.qq="1790789616"loadstring(game:HttpGet(('https://raw.githubusercontent.com/wev666666/baijiaobengV2.0beta/main/%E7%99%BD%E8%84%9A%E6%9C%ACbeta'),true))()
+end)
+
+about:Button("剑客V5",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JianKeCX/JianKeV5/refs/heads/main/QQqun155160100"))()
+end)
+
+about:Button("退休",function()
+qun="809771141"
+loadstring(game:HttpGet("https://pastebin.com/raw/yPhwFHy4"))()
+end)
+
+about:Button("叶",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/roblox-ye/QQ515966991/refs/heads/main/ROBLOX-YE-SCRIPT-XIAOYE.lua"))()
+end)
+
+about:Button("剑客V4",function()
+jianke_V4 = "作者_初夏"
+jianke__V4 = "作者QQ1412152634"
+jianke___V4 = "剑客QQ群347724155"
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
+end)
+
 local UITab14 = win:Tab("『监狱人生』",'4483345998')
 
 local about = UITab14:section("『传送』",true)
